@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hydrate</string>
+    <string name="middle_string">Remember to drink water!</string>
+    <string name="test_string">test!</string>
+    <string name="button_desc">app start/stop</string>
+    <string name="notfi_button">click me!</string>
+</resources>
