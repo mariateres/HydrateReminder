@@ -1,0 +1,54 @@
+package com.example.hydrate;
+ 
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+Button buttonAdd2,buttonSub2;
+EditText newEditText2;
+
+float mValueOne, mValueTwo; 
+boolean Addition, mSubtract;
+
+@Override	
+protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+		
+		
+		buttonAdd2 = (Button) findViewById(R.id.buttonadd2);
+		buttonSub2 = (Button) findViewById(R.id.buttonsub2);
+
+
+
+buttonAdd2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+ 
+                if (newEditText2 == null) {
+                    newEditText2.setText(""+ "0");
+                } else {
+                    mValueOne = Float.parseFloat(newEditText2.getText() + "");
+                    Addition = true;
+                    newEditText2.setText(null);
+                }
+            }
+        });
+ 
+        buttonSub2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne = Float.parseFloat(newEditText2.getText() + "");
+                mSubtract = true;
+                newEditText2.setText(null);
+            }
+        });
+		
