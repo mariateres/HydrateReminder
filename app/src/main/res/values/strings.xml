@@ -4,4 +4,14 @@
     <string name="test_string">test!</string>
     <string name="button_desc">app start/stop</string>
     <string name="notfi_button">click me!</string>
+    <string name="alarm_on_toast"> Hydrate On!</string>
+    <string name="alarm_off_toast">Hydrate Off!</string>
+    <string name="notification_title">Hydrate Alert</string>
+    <string name="notification_text">You should drink water now!</string>
+    <string name="alarm_off">Alarm off</string>
+    <string name="alarm_on">Alarm on</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="done">Done</string>
+    <string name="add_target_glasses">0</string>
 </resources>

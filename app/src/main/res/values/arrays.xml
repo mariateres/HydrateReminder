@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items_class">items_class
+        <item>Every half an hour</item>
+    <item>Every 1hr</item>
+        <item>Every 2hr</item>
+    </string-array>
+</resources>
