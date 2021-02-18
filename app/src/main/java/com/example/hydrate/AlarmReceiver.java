@@ -2,7 +2,7 @@ package com.example.hydrate;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.app.TaskStackBuilder;
+//import android.app.TaskStackBuilder;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -52,14 +52,14 @@ public class AlarmReceiver extends BroadcastReceiver {
                         .FLAG_UPDATE_CURRENT);
 
 
-        Intent resultIntent =new Intent(context,ResultActivity.class);
-
-        TaskStackBuilder stackBuilder=TaskStackBuilder.create(context);
-        stackBuilder.addNextIntentWithParentStack(resultIntent);
-        PendingIntent resultPendingIntent=stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        //Intent resultIntent =new Intent(context,ResultActivity.class);
+        //TaskStackBuilder stackBuilder=TaskStackBuilder.create(context);
+        //stackBuilder.addNextIntentWithParentStack(resultIntent);
+        //PendingIntent resultPendingIntent=stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 // Build the notification
         NotificationCompat.Builder builder = new NotificationCompat.Builder
                 (context, PRIMARY_CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_launcher_round)
                 .setContentTitle(context.getString(R.string.notification_title))
                 .setContentText(context.getString(R.string.notification_text))
                 .setContentIntent(contentPendingIntent)
@@ -67,7 +67,6 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL);
 
-        //NotificationCompat.Builder builder= new NotificationCompat.Builder(this,PRIMARY_CHANNEL_ID);
         // Deliver the notification
         mNotificationManager.notify(NOTIFICATION_ID, builder.build());
     }

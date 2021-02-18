@@ -14,4 +14,8 @@
     <string name="sub">-</string>
     <string name="done">Done</string>
     <string name="add_target_glasses">0</string>
+    <string name="enter_the_target_no_of_glasses">Enter the target no. of Glasses</string>
+    <string name="enter_the_frequency_of_reminders">Enter the frequency of reminders</string>
+    <string name="exit">Done!</string>
+
 </resources>

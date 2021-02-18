@@ -1,9 +1,9 @@
 package com.example.hydrate;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -12,6 +12,10 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        Button testButton=(Button)findViewById(R.id.testButton);
+        Button exit=(Button)findViewById(R.id.exitButton);
+        exit.setOnClickListener(v -> {
+            finish();
+            System.exit(0);
+        });
     }
 }
