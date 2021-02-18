@@ -1,6 +1,10 @@
 package com.example.hydrate;
 
+<<<<<<< HEAD
 import android.app.AlarmManager;
+=======
+import android.app.Notification;
+>>>>>>> 497a006f972196302675ec94e36b46f8e462a55e
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -30,4 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 Button b1 = (Button) findViewById(R.id.setupbutton);
                 b1.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SecondActivity.class)));
 
+<<<<<<< HEAD
 }}
+=======
+}
+>>>>>>> 497a006f972196302675ec94e36b46f8e462a55e
