@@ -33,4 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 b1.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SecondActivity.class)));
 
 
+<<<<<<< HEAD
         }}
+=======
+}}
+
+}
+>>>>>>> ea4eeb78eef2db9a0d50862269dce7e86cc67bf6
