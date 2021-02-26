@@ -32,11 +32,5 @@ public class MainActivity extends AppCompatActivity {
                 Button b1 = (Button) findViewById(R.id.setupbutton);
                 b1.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SecondActivity.class)));
 
-
-
-        }}
-
-}}
-
 }
-
+}
